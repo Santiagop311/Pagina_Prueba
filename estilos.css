@@ -206,6 +206,26 @@ button{
     background-position: center;
     padding-top: 130px;
 }
+/* Estilo del contenedor de noticias */
+.noticias {
+    text-align: center; /* Centrar horizontalmente las noticias */
+}
+
+/* Estilo para cada noticia individual */
+.noticia {
+    display: inline-block; /* Mostrar las noticias en línea */
+    width: calc(33.33% - 20px); /* Establecer el ancho de cada noticia */
+    margin-right: 20px; /* Margen derecho para separar las noticias */
+    margin-bottom: 20px; /* Margen inferior para separar las noticias */
+    vertical-align: top; /* Alinear las noticias en la parte superior */
+    box-sizing: border-box; /* Incluir el margen en el cálculo del ancho */
+}
+
+/* Ajuste para el último elemento para evitar desbordamientos */
+.noticia:nth-child(3n) {
+    margin-right: 0; /* Quitar el margen derecho del tercer elemento en cada fila */
+}
+
 
 
 .titulo-ofertas,
